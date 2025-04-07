@@ -1,0 +1,181 @@
+/* src/signupstyle.css
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #22421a;
+    color: #000;
+  }
+  
+  .signup-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: black;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    font-size: 1.1em;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  select,
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #355d2c;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: #224f2c;
+    color: #3b0b0b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #1b3f23;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+  } */
+  
+
+body {
+    background-color: rgb(30, 60, 30); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 40px; 
+    color: rgb(23, 7, 7); /* Ensures the terms text is black */
+}
+
+.signup-container {
+    max-width: 1000px; /* Increased width for the form container */
+    width: 100%; /* Full width for the form container */
+    background-color: rgb(255, 255, 255); /* White background for the form */
+    padding: 25px 20px; /* Padding around the box */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    color: black; /* Black text for heading */
+    margin-top: 0;
+}
+
+label {
+    font-size: 1em; /* Standard label size */
+    color: black; /* Black text for labels */
+    display: block; /* Ensures labels take a full line */
+    margin: 10px 0 10px; /* Space above and below the labels */
+    text-align: left; /* Align text labels to the left */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select {
+    width: calc(100% - 20px); /* Full width for textboxes minus padding */
+    padding: 10px; /* Padding around the textboxes */
+    margin: 10px 0; /* Margin above and below */
+    border: 1px solid rgb(70, 130, 70); /* Dark green border */
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: rgb(255, 255, 255); /* White background for input */
+    color: rgb(23, 7, 7); /* Ensures the terms text is black */
+}
+
+input[type="radio"]
+
+input[type="checkbox"] {
+    margin-right: 5px; /* Space between input and label text */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: rgb(34, 79, 44); /* Dark green for buttons */
+    color: white; /* White text for buttons */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0 5px; /* Space between buttons */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between; /* This will place the buttons at both ends */
+    margin-top: 15px; /* Add space above the button group */
+    color: rgb(23, 7, 7); /* Ensures the terms text is black */
+}
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: rgb(0, 100, 0); /* Lighter green on hover */
+}
+
+.terms-container label {
+    color: rgb(23, 7, 7); /* Ensures the terms text is black */
+    text-align: left; /* Align the text to the left */
+    display: inline; /* Keeps the text inline with the checkbox */
+}
+
+
+.error-message {
+    color: rgb(255, 0, 0); /* Red color for error messages */
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none; /* Hidden by default */
+}
+
+.login-link {
+    margin-top: 20px; /* Space between form and link */
+    text-align: center; /* Center the link */
+    color: rgb(0, 100, 0); /* Dark green for the link */
+}
+
